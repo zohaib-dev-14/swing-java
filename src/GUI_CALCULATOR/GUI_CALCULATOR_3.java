@@ -12,25 +12,21 @@ public class GUI_CALCULATOR_3 {
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(5, 2, 5, 5));
         
-        JLabel lblX1 = new JLabel("Enter X1: ");
         JTextField txtX1 = new JTextField();
-        JLabel lblY1 = new JLabel("Enter Y1: ");
         JTextField txtY1= new JTextField();
-        JLabel lblX2 = new JLabel("Enter X2: ");
         JTextField txtX2 = new JTextField();
-        JLabel lblY2 = new JLabel("Enter Y2: ");
         JTextField txtY2 = new JTextField();
         
         JButton btnCalculate = new JButton("Calculate");
         
         
-        panel.add(lblX1);
+        panel.add(new JLabel("Enter X1: "));
         panel.add(txtX1);
-        panel.add(lblY1);
+        panel.add(new JLabel("Enter Y1: "));
         panel.add(txtY1);
-        panel.add(lblX2);
+        panel.add(new JLabel("Enter X2: "));
         panel.add(txtX2);
-        panel.add(lblY2);
+        panel.add(new JLabel("Enter Y2: "));
         panel.add(txtY2);
         panel.add(new JLabel(" "));
         panel.add(btnCalculate);
