@@ -1,23 +1,23 @@
-import javax.swing.JFrame;
-import javax.swing.JLabel;
+
+import java.awt.*;
+
+import javax.swing.*;
+
 public class SWING_BASIC_2 {
 
 	public static void main(String[] args) {
 		
-		JFrame frame = new JFrame("My First Program");
-		JLabel newLabel = new JLabel("Hello There", JLabel.CENTER);
-	
-		newLabel.setFont(new java.awt.Font("Times New Roman", java.awt.Font.BOLD, 20));	
-		frame.add(newLabel);
-		frame.add(newLabel);
-
+		JFrame frame = new JFrame("My First App");
+		JLabel label = new JLabel("Hello, World!", JLabel.CENTER);
+		frame.setForeground(Color.blue);
+		frame.add(label);
 		
-		frame.setSize(400, 200);
+		label.setFont(new Font("Arial", Font.BOLD, 20));
+		label.setForeground(Color.black);
+		frame.setSize(400, 400);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
-		
-		
+		frame.setLocationRelativeTo(null);
 		
 		
 
