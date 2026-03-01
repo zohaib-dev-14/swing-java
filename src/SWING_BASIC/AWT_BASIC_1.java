@@ -1,3 +1,4 @@
+package SWING_BASIC;
 import java.awt.*;
 public class AWT_BASIC_1 {
 
