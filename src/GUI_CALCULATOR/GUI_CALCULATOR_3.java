@@ -1,8 +1,9 @@
+package GUI_CALCULATOR;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class DISTANCE_CALCULATOR_GUI_3 {
+public class GUI_CALCULATOR_3 {
 
     public static void main(String[] args){
     	
