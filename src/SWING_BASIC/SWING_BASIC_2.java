@@ -10,7 +10,7 @@ public class SWING_BASIC_2 {
 		
 		JFrame frame = new JFrame("My First App");
 		JLabel label = new JLabel("Hello, World!", JLabel.CENTER);
-		frame.setForeground(Color.blue);
+		label.setForeground(Color.blue);
 		frame.add(label);
 		
 		label.setFont(new Font("Arial", Font.BOLD, 20));
