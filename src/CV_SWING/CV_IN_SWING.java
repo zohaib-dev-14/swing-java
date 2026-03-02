@@ -7,11 +7,10 @@ public class CV_IN_SWING {
     public static void main(String[] args) {
 
         JFrame frame = new JFrame("Muhammad Zohaib - CV");
-        frame.setLayout(new BorderLayout());
 
         JTextArea textArea = new JTextArea();
         textArea.setEditable(false);
-        textArea.setFont(new Font("Serif", Font.PLAIN, 14));
+        textArea.setFont(new Font("Times New Roman", Font.PLAIN, 14));
 
         textArea.setText(
                 "Muhammad Zohaib\n" +
@@ -55,3 +54,5 @@ public class CV_IN_SWING {
         frame.setVisible(true);
     }
 }
+
+

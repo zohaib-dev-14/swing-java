@@ -25,11 +25,11 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
 
         frame.add(sizePanel, BorderLayout.NORTH);
 
-        // ===== TABBED PANE =====
+        // tabbedPane
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.setEnabled(false);
 
-        // ===== ADD TAB =====
+        // add tab in tabbedPane
         JPanel addPanel = new JPanel(new GridLayout(4,2,5,5));
   
         JTextField txtName = new JTextField();
@@ -52,7 +52,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
 
         tabbedPane.addTab("Add", addPanel);
 
-        // ===== DISPLAY TAB =====
+        // display tab
         JPanel displayPanel = new JPanel(new BorderLayout());
         JTextArea textArea = new JTextArea();
         JButton btnDisplay = new JButton("Display Records");
@@ -62,7 +62,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
 
         tabbedPane.addTab("Display", displayPanel);
 
-        // ===== UPDATE TAB =====
+        // update tab
         JPanel updatePanel = new JPanel(new GridLayout(5,2,5,5));
 
         JTextField txtIndex = new JTextField();
@@ -86,7 +86,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
 
         frame.add(tabbedPane, BorderLayout.CENTER);
 
-        // ===== SET SIZE EVENT =====
+        // set size event
         btnSetSize.addActionListener(e -> {
             try {
                 int size = Integer.parseInt(txtSize.getText());
@@ -110,7 +110,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
             }
         });
 
-        // ===== ADD EVENT =====
+        // add event
         btnAdd.addActionListener(e -> {
 
             if(currentIndex < records.length){
@@ -129,7 +129,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
             }
         });
 
-        // ===== DISPLAY EVENT =====
+        // display event 
         btnDisplay.addActionListener(e -> {
 
             textArea.setText("");
@@ -144,7 +144,7 @@ public class TELEPHONE_DIRECTORY_TASK_CODE {
             }
         });
 
-        // ===== UPDATE EVENT =====
+        // update event
         btnUpdate.addActionListener(e -> {
 
             try {
